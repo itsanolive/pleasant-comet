@@ -1,16 +1,47 @@
-title: Stackbit Fresh Theme
+title: Test Fresh Theme
 baseurl: /
-permalink: '/:title/'
+permalink: /:title/
 description: Personal blogging theme for Stackbit
-layout_style: overflow
-palette: blue
+layout_style: simple
+palette: orange
 header:
-  type: header
-  title: Stackbit Fresh
-  tagline: Header Tagline
+  social_links:
+    - type: action
+      label: Twitter
+      url: https://twitter.com/
+      style: icon
+      icon_class: fa-twitter
+      new_window: true
+    - type: action
+      label: Instagram
+      url: https://www.instagram.com/
+      style: icon
+      icon_class: fa-instagram
+      new_window: true
+    - type: action
+      label: GitHub
+      url: https://github.com/
+      style: icon
+      icon_class: fa-github
+      new_window: true
+    - type: action
+      label: LinkedIn
+      url: https://www.linkedin.com/
+      style: icon
+      icon_class: fa-linkedin
+      new_window: true
+    - type: action
+      label: DEV
+      url: https://dev.to/
+      style: icon
+      icon_class: fa-dev
+      new_window: true
   profile_img: images/avatar.png
   background: dark
-  has_nav: true
+  tagline: Header Tagline
+  has_social: true
+  title: Stackbit Fresh
+  type: header
   nav_links:
     - type: action
       label: Home
@@ -32,45 +63,14 @@ header:
       label: Contact
       url: /contact/
       style: link
-  has_social: true
-  social_links:
-    - type: action
-      label: Twitter
-      url: 'https://twitter.com/'
-      style: icon
-      icon_class: fa-twitter
-      new_window: true
-    - type: action
-      label: Instagram
-      url: 'https://www.instagram.com/'
-      style: icon
-      icon_class: fa-instagram
-      new_window: true
-    - type: action
-      label: GitHub
-      url: 'https://github.com/'
-      style: icon
-      icon_class: fa-github
-      new_window: true
-    - type: action
-      label: LinkedIn
-      url: 'https://www.linkedin.com/'
-      style: icon
-      icon_class: fa-linkedin
-      new_window: true
-    - type: action
-      label: DEV
-      url: 'https://dev.to/'
-      style: icon
-      icon_class: fa-dev
-      new_window: true
+  has_nav: true
 footer:
   type: footer
-  content: '&copy; All rights reserved.'
+  content: "&copy; All rights reserved."
   links:
     - type: action
       label: Made with Stackbit.
-      url: 'https://www.stackbit.com'
+      url: https://www.stackbit.com
       style: link
       new_window: true
 sass:
@@ -79,6 +79,9 @@ sass:
   precision: 10
 plugins:
   - jekyll-menus
+collections:
+  posts:
+    permalink: /posts/:title/
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -92,6 +95,3 @@ exclude:
   - netlify.toml
   - stackbit-build.sh
   - stackbit-pull.js
-collections:
-  posts:
-    permalink: '/posts/:title/'
