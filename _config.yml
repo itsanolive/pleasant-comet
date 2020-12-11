@@ -3,7 +3,7 @@ baseurl: /
 permalink: /:title/
 description: Personal blogging theme for Stackbit
 layout_style: simple
-palette: orange
+palette: green
 header:
   social_links:
     - type: action
